@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsove Sidebar Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Show & Hide Menu -->
+    <input type="radio" name="menu" id="s-menu">
+    <input type="radio" name="menu" id="c-menu">
+    <!-- Side Bar -->
+    <div class="side">
+        <!-- Logo -->
+        <header><img src="./img/logo.png" alt=""></header>
+        <!-- Show & Hide Sub Menus -->
+        <input type="checkbox" id="services">
+        <input type="checkbox" id="graphics">
+        <input type="checkbox" id="logos">
+        <input type="checkbox" id="photos">
+        <!-- Menu Items -->
+        <ul class="nav-links">
+            <li><a href=""><i class="fas fa-home"></i>Home</a></li>
+            <li><a href=""><i class="fas fa-address-card"></i>About Us</a></li>
+            <li><a href=""><label for="services"><i class="fab fa-servicestack"></i>Services</label></a>
+                <!-- Drop Down 1 -->
+                <ul class="drop1">
+                    <li><a href=""><label for="graphics"><i class="fab fa-app-store-ios"></i>Graphic Design</label></a>
+                        <!-- Drop Down 2 -->
+                        <ul class="drop2">
+                            <li><a href=""><label for="logos"><i class="fas fa-eye"></i>Logo Design</label></a>
+                                <!-- Drop Down 3 -->
+                                <ul class="drop3">
+                                    <li><a href=""><i class="fas fa-cube"></i>3D Logos</a></li>
+                                    <li><a href=""><i class="fas fa-vr-cardboard"></i>2D Logos</a></li>
+                                    <li><a href=""><i class="fas fa-text-width"></i>Text Logos</a></li>
+                                </ul>
+                            </li>
+                            <li><a href=""><i class="fas fa-infinity"></i>Infographic</a></li>
+                            <li><a href=""><i class="fas fa-book-open"></i>Flyer Design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="fas fa-radiation"></i>3D Animation</a></li>
+                    <li><a href=""><i class="fas fa-video"></i>Video Editing</a></li>
+                    <li><a href=""><label for="photos"><i class="fas fa-camera-retro"></i>Photography</label></a>
+                        <!-- Drop Down 4 -->
+                        <ul class="drop4">
+                            <li><a href=""><i class="fas fa-gift"></i>Wedding</a></li>
+                            <li><a href=""><i class="fas fa-birthday-cake"></i>Casual</a></li>
+                            <li><a href=""><i class="fas fa-glass-cheers"></i>Events</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href=""><i class="fab fa-product-hunt"></i>Products</a></li>
+            <li><a href=""><i class="fas fa-phone-square"></i>Contact Us</a></li>
+        </ul>
+    </div>
+    <!-- Menu Buttons -->
+    <div class="mbtns">
+        <label for="s-menu" class="showbtn"><i class="fas fa-bars"></i></label>
+        <label for="c-menu" class="closebtn"><i class="fas fa-times"></i></label>
+    </div>
+</body>
+</html>
