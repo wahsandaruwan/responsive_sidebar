@@ -1,6 +1,6 @@
 ## Sidebar Menu
 
-### This is responsive sidebar menu using CSS
+### This is responsive sidebar menu in CSS
 
 #### Technologies Used
 * HTML5
